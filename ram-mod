@@ -1,3 +1,5 @@
+#RAM overclocking instructions
+
 sudo xed /etc/sysctl.conf
 
 # Reduce the swap tendency 
