@@ -29,21 +29,6 @@ if exists('py2') && has('python')
 elseif has('python3')
 endif
 
-" Vundle -----------------------------------------------------------------------
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'xavierd/clang_complete'
-
-call vundle#end()            " required
-" Vundle -----------------------------------------------------------------------
 
 " file type and syntax highliting on
 filetype plugin indent on
@@ -56,8 +41,6 @@ autocmd InsertLeave * redraw!
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 autocmd BufWritePre * :%s/\s\+$//e
 
-" color scheme
-color leet2
 
 " sessions
 noremap <F1> :mksession! .vim.session <cr>
